@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Playlists</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/circletype.min.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/myscript.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand " id="addnewpls"href="#" data-toggle="modal" data-target="#addplaylist"><span class="glyphicon glyphicon-plus"></span>Add New Playlist</a>
+          </div>
+          <button id="reset" class="pull-right btn btn-success">Reset</button>
+          <ul class="nav navbar-nav pull-right col-lg-2">
+                    <div id="search" class="input-group">
+                            <input type="text" class="form-control" id="searchinput"aria-label="Text input with checkbox">
+                            <span class="input-group-addon">
+                                   <a href="#"><span class="glyphicon glyphicon-search" onclick="search()"></span></a>
+                            </span>
+                          </div>     
+          </ul>
+        </div>
+      </nav>
+      <div class="row"id="mainplayer"></div>
+<div class="container mainplaylistsshow" id="mainpls">
+  nir123
+</div>
+
+ <!-- Add New Playlist Modal -->
+<div id="addplaylist" class="modal fade" role="dialog">
+  <div class="modal-dialog "> 
+        <div class="modal-content">
+          <div>
+           <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Playlist</h4>
+          </div>
+      
+      <div class="modal-body">
+          <form id="addplsform"><br>
+          <div class="form-group" id="addpls">
+              <label for="plsname">PlayList Name:</label><br>
+              <input  required type="text" id="plsname" placeholder="name" name="plsname"><br>
+              <label for="plsurl"> IMG URL:</label><br>
+              <input type="text" id="plsurl" placeholder="URL" name="imgurl">
+              <img id="modalimg"class="pull-right" src ="http://shec-labs.com/wp-content/themes/creativemag/images/default.png"><br>
+             
+
+            </div>
+            <div id ="form2" >
+            <div class="form-group" id="addnewsongs">
+                <div class="one_song">
+                <label for="plsname">Song Name:</label>
+                <input class="single_song_name" type="text"  placeholder="name" name="plsname">
+                  <label>Song URL:</label>
+                  <input type="text" class="single_song_url" placeholder="URL" name="songurl">
+                </div>
+            </div>    
+            <a class="more_song" href="#">add more</a>  
+      </div>
+     
+      <div class="modal-footer">
+          <input id="save" type="submit" class="btn btn-success"  value="save">
+          <button id="next"> Next</button>
+      </div>
+    </form>
+    </div>
+    
+    
+<!-- -delete modal -->
+  
+  <div id="removemodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content .removemodal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">REMOVE</h4>
+        </div>
+        <div class="modal-body">
+          <p>Are You Sure??</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button class="btn btn-danger deletepls">Delete</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+ <!-- ---------------------- EDIT MODAL------------------  -->
+  <div id="editplaylist" class="modal fade" role="dialog">
+    <div class="modal-dialog "> 
+          <div class="modal-content">
+            <div>
+             <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Edit Playlist</h4>
+            </div>
+        
+        <div class="modal-body">
+            <form id="editplsform"><br>
+            <div class="form-group" id="editpls">
+                <label for="plsname">PlayList Name:</label><br>
+                <input  type="text" id="editplsname" placeholder="name" name="plsname"><br>
+                <label for="editplsurl"> IMG URL:</label><br>
+                <input type="text" id="editplsurl" placeholder="URL" name="imgurl">
+                <img id="editmodalimg"class="pull-right" src =""><br>
+               
+  
+              </div>
+              <div id ="editplsform2" >
+              <div class="form-group" id="editsongs">
+              </div>    
+              <a class="more_song" href="#">add more</a>  
+        </div>
+       
+        <div class="modal-footer">
+            <input id="update" type="submit" class="btn btn-success"  value="update">
+            <button id="edit"> next</button>
+        </div>
+      </form>
+      </div>
+ 
+</body>
+</html>

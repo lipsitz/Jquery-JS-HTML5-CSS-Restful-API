@@ -1,0 +1,186 @@
+body {
+    background-image: url("bg.jpg");
+    overflow: hidden;
+}
+#search{
+margin: 6px 2px 2px 2px
+
+}
+
+.mainimgs {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.roundtext{
+    margin-right: 29px;
+    margin-bottom: 0px;
+    color: white;
+    text-decoration-line: underline;
+}
+
+.plsclass:hover .plsbtns{
+    visibility: visible;
+}
+.plsbtns{
+    margin: -188px -1px 2px 34px;
+    width: 180px;
+    height: 180px;
+    visibility: hidden;
+}
+.plsclass{
+    width: 250px;
+    height: 250px;
+}
+.mainimgs{
+    opacity: 0.85;
+}
+.plsclass:hover .mainimgs{
+opacity: 1;
+
+}
+.edit_delete_btns{
+    margin: 0px 7px 3px 34px;
+}
+.edit_delete_btns button{
+    background-image: none;
+   border: none;
+   border-radius:500px;
+   background-color: white;
+   background-repeat:no-repeat;
+   outline: 1;
+    font-size: 15px;
+    color:black;
+}
+.playplsbtn{
+    background-image: none;
+   border: none;
+   border-radius:none;
+   background-color: transparent;
+   background-repeat:no-repeat;
+   outline: none;
+    font-size: 30px;
+    color:white;
+    margin: 46px 2px 3px 41px;
+}
+
+
+#player{
+width: 600px;
+height: 220px;
+border: solid;
+border-radius: 100px;
+border-color:grey;
+margin: 4px 17px 6px 470px;
+background-color: black;
+
+}
+
+#player audio{
+    
+    margin: 180px 6px 3px 25px;
+    float: right;
+    margin-top: -125px;
+    margin-right: 100px;
+    }
+#playerbtns{
+   
+    
+    margin-top: -107px;
+    margin-left: 35px;
+}
+#playerbtns button{
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    outline: none;
+    font-size: 30px;
+    color:white;
+    margin:-5px 6px 5px 39px; 
+}
+#edit_delete_player{
+    float:right;
+    margin: -58px -67px 0px 0px;
+}
+#edit_delete_player button{
+    border: none;
+    background-repeat:no-repeat;
+    outline: none;
+    font-size: 20px;
+    float:right;
+    color: black;
+    border-radius:500px;
+   background-color: white;
+}
+
+#player img{
+    margin-top: 7px;
+
+
+}
+
+#songslist{
+    
+    margin: -71px 10px 0px 217px;
+}
+#modalimg{
+    width:170px;
+    height:130px;
+    
+    margin: -100px 9px 6px 2px;
+}
+#reset{
+
+    margin-top: 5px;
+}
+
+#deletebtnplayer{
+    
+    margin-top: -24px;
+}
+#editbtnplayer{
+    
+    margin:8px 30px 0px -31px;
+}
+#edit_delete_player{
+    /* visibility: hidden; */
+
+    
+}
+#player :hover #edit_delete_player{
+    visibility: visible;
+}
+
+#spinimage {
+    opacity: 1;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
